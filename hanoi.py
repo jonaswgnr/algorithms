@@ -1,6 +1,6 @@
 def hanoi (q,z,p,n):
   if n is 1:
-    print("Move ", q," to", z)
+    print("Bewege ", q," zu", z)
     return 0
   hanoi(q,p,z,n-1)
   hanoi(q,z,p,1)
@@ -9,5 +9,5 @@ def hanoi (q,z,p,n):
 q="quelle"
 z="ziel"
 p="puffer"
-n=5
-#hanoi(q,z,p,n)
+n= int(input("Anzahl Scheiben: "))
+hanoi(q,z,p,n)
